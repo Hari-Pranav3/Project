@@ -1,0 +1,24 @@
+.hlo{
+    color:aqua;
+}
+
+.wrap{
+    background-image: url("./Images/download.jpg");
+    height:300px;
+    width: 200px;
+}
+
+@media (max-width:600px){
+    .hlo{
+        color:red;
+    }
+    .wrap{
+        background-image: url(./Images/images.jpeg);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px){
+    .hlo{
+        color:blueviolet;
+    }
+}

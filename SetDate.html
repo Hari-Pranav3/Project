@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let date = new Date()
+            let cdate = date.getDate()
+            let cmonth = date.getMonth()+1
+            let cyear = date.getFullYear()
+            let gdate = document.getElementById("date").value 
+            let gmonth = document.getElementById("Month").value
+            let gyear = document.getElementById("year").value
+            let count
+            if (gyear==cyear){
+                if(gmonth>cmonth){
+                    alert("Invalid")
+                }else if(gmonth==cmonth){
+                    if(gdate>cdate){
+                        alert("Invalid")
+                    }else{
+                        count=cdate-gdate
+                        alert("No.of days left",count)
+                    }
+                }else{
+                    count=
+                }
+            }
+
+            
+        </script>
+    </body>
+</html>

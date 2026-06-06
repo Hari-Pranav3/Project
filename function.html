@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <h1 id="hlo"></h1>
+        <button onclick="handleshow()">Show</button>
+        <br/>
+        <br/>
+        <br/>
+        <input type="text" placeholder="Enter ur username" id="user"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur password" id="pass"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur first name" id="first"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur last name" id="last"/>
+        <br/>
+        <br/>
+        <button onclick="handlesubmit()">submit</button>
+        <script>
+            function handleshow(){
+                document.getElementById("hlo").textContent = "Greens"
+            }
+            function handlesubmit(){
+                let firstname= document.getElementById("first").value
+                let lastname = document.getElementById("last").value
+                let username= document.getElementById("user").value 
+                let password = document.getElementById("pass").value
+                if (username == "" || password =="" || firstname =="" || lastname ==""){
+                    alert("Please fill all details");
+                }else{
+                    alert("Form submitted");
+                    
+                }
+            }
+        </script>
+    </body>
+</html>

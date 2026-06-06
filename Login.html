@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+  <html>
+     
+     <head>
+          <title>Login</title>
+     </head>
+
+     <body>
+        <h1> LOGIN </h1>
+        <br/>
+        <br/>
+        <input type="text" placeholder="Enter ur username" id="user"/>
+        <br/>
+        <br/>
+        <input type="password" placeholder = "Enter ur password" id="pass"/>
+        <br/>
+        <br/>
+        <button onclick="handlesubmit()">Log In</button>
+        <script>
+         function handlesubmit(){
+                let username= document.getElementById("user").value 
+                let password = document.getElementById("pass").value
+                
+                let olduser = localStorage.getItem("username")
+                let oldpass = localStorage.getItem("password")
+
+                if(olduser == username && oldpass == password){
+                    alert("Login Success");
+                }else{
+                    alert("Please Enter correct details");
+                }
+            }
+        </script>
+     </body>
+  </html>

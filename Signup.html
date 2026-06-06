@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SignUp Page</title>
+    </head>
+    <body>
+        <h1> SIGN UP</h1>
+        <br/>
+        <br/>
+        <input type="text" placeholder="Enter ur username" id="user"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur password" id="pass"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur first name" id="first"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur last name" id="last"/>
+        <br/>
+        <br/>
+        <input type="text" placeholder = "Enter ur Phone number" id="Number"/>
+        <br/>
+        <br/>
+        <button onclick="handlesubmit()">Sign Up</button>
+        <script>
+            function handleshow(){
+                document.getElementById("hlo").textContent = "Greens"
+            }
+            function handlesubmit(){
+                let firstname= document.getElementById("first").value
+                let lastname = document.getElementById("last").value
+                let username= document.getElementById("user").value 
+                let password = document.getElementById("pass").value
+                let phonenumber = document.getElementById("Number").value
+                if (username == "" || password =="" || firstname =="" || lastname ==""){
+                    alert("Please fill all details");
+                }else{
+                    console.log("Signup Completed");  
+                    localStorage.setItem("username",username)  
+                    localStorage.setItem("password",password)
+                    window.location.href="Login.html"
+                }
+            }
+        </script>
+    </body>
+</html>
